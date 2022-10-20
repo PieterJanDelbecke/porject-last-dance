@@ -12,19 +12,14 @@ body {
 }
 
 .box1{
-    /* flex-basis: 0;
     flex-grow: 1;
-    flex-shrink: 1; */
-    flex: 1 1 0;
     background-color: blue;
 }
 
 .box2{
     background-color: red;
-    flex-basis: 300px;
 }
 
 .box3{
     background-color: green;
-    flex-basis: 100px;
 }
