@@ -9,12 +9,7 @@ const initialRows = {
     firstName: "Pieter-Jan", lastName: "Delbecke", city: "Sydney", country: "Australia"
 }
 
-myMap = new Map()
-for (let [key, value] of Object.entries(initialRows)){
-    myMap.set(key, value)
-}
+const myResult1 = initialRows.firstName
+const myResult2 = initialRows["firstName"]
 
-myObject = Object.fromEntries(myMap)
-console.log(myMap)
-console.log("-------------------------")
-console.log(myObject)
+console.log(myResult1, "++++", myResult2)
