@@ -14,4 +14,7 @@ for (let [key, value] of Object.entries(initialRows)){
     myMap.set(key, value)
 }
 
+myObject = Object.fromEntries(myMap)
 console.log(myMap)
+console.log("-------------------------")
+console.log(myObject)
