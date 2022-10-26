@@ -9,8 +9,9 @@ const initialRows = {
     firstName: "Pieter-Jan", lastName: "Delbecke", city: "Sydney", country: "Australia"
 }
 
-myObject1 = Object.values(initialRows)
-myObject2 = Object.keys(initialRows)
+myMap = new Map()
+for (let [key, value] of Object.entries(initialRows)){
+    myMap.set(key, value)
+}
 
-console.log(myObject1)
-console.log(myObject2)
+console.log(myMap)
