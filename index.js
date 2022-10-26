@@ -5,9 +5,10 @@ const initialRows = [
     { name: "four", info: { order: 4, color: "blue" } },
 ];
 
-const rowsMap = new Map();
-for (let row of initialRows) {
-    rowsMap.set(row.name, row.info);
+const myRows = new Map()
+
+for (let row of initialRows){
+    myRows.set(row.name, row.info)
 }
 
-console.log(...rowsMap)
+console.log(myRows.get("four"))
