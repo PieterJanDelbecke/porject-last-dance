@@ -1,5 +1,9 @@
-function filter_list(l){
-    return l.filter((item => typeof item === 'number'))
-}
+const myMap = new Map()
 
-console.log(filter_list([1,2,'a','b']))
+myMap.set("one", {firstName: "Pieter-Jan", lastName: "Delbecke", city: "Sydney" })
+myMap.set("two", {firstName: "Alessandra", lastName: "Salso", city: "Melbourne" })
+
+const myObj = Object.fromEntries(myMap)
+const values = Object.values(myObj)
+
+console.log(values)
