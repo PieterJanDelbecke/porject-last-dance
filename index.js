@@ -1,7 +1,5 @@
-const myMap = new Map()
+const myArr = [0,1,2,3,4,5]
 
-myMap.set("one", {firstName: "Pieter-Jan", lastName: "Delbecke", city: "Sydney" })
-myMap.set("two", {firstName: "Alessandra", lastName: "Salso", city: "Melbourne" })
-myMap.set("three", {firstName: "Boris", lastName: "Johnston", city: "London" })
+const lastItem = myArr.at(-1)
 
-console.log(myMap.get("three"))
+console.log(lastItem)
