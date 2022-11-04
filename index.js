@@ -11,4 +11,5 @@ tabs.get("one").fields.get("fieldOne").options.set("id1", {color: "red", name: "
 myOptions = tabs.get("one").fields.get("fieldOne").options.get("id1")
 console.log(myOptions)
 console.log(myOptions)
+console.log(myOptions)
 
