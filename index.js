@@ -2,14 +2,7 @@ function isSquare(arr){
     if(!arr.length) {
         return undefined
     } else {
-        let count = 0
-        arr.map(i => {
-            const sqrt = Math.sqrt(i)
-            if (sqrt - Math.floor(sqrt) !== 0) {
-                count++
-            }
-        })
-        return (!count) ? true : false 
+        return arr.every(i => Number.isInteger(Math.sqrt(i)))
     }
 }
 
