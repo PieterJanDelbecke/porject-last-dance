@@ -5,3 +5,4 @@ function getMiddle(s) {
 
 console.log("test: ", getMiddle("test"));
 console.log("testing: ", getMiddle("testing"));
+console.log("A: ", getMiddle(""));
