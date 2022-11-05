@@ -1,8 +1,20 @@
-function getMiddle(s) {
-  const half = Math.floor(s.length / 2);
-  return s.length % 2 === 0 ? s.slice(half - 1, half + 1) : s.charAt(half);
+function isSquare(arr){
+    if(!arr.length) {
+        return undefined
+    } else {
+        let count = 0
+        arr.map(i => {
+            const sqrt = Math.sqrt(i)
+            if (sqrt - Math.floor(sqrt) !== 0) {
+                count++
+            }
+        })
+        return (!count) ? true : false 
+    }
 }
 
-console.log("test: ", getMiddle("test"));
-console.log("testing: ", getMiddle("testing"));
-console.log("A: ", getMiddle(""));
+console.log(isSquare([1,4,9,16,25,36]))
+console.log(isSquare([1,2,3,4,5,6]))
+console.log(isSquare([]))
+
+// console.log(Math.sqrt(26))
