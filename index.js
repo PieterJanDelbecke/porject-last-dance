@@ -1,5 +1,5 @@
 function isSquare(n){
-     return Math.sqrt(n)
+     return Number.isInteger(Math.sqrt(n))
 }
 
 console.log(isSquare(-1))
