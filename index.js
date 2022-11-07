@@ -1,10 +1,8 @@
 function accum(s) {
-  const arr = s.split("");
-  const newArr = arr.map((i, index) => {
+  return s.split("").map((i, index) => {
      const string = i.repeat(index+1)
-     return string.charAt(0).toUpperCase() + string.substring(1)
-  });
-  return newArr
+     return i.repeat(index+1).charAt(0).toUpperCase() + string.substring(1)
+  }).join("-");
 }
 
 console.log(accum("abcd"));
