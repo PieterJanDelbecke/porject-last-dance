@@ -1,5 +1,10 @@
-function findShort(s){
-     return Math.min(...(s.split(" ").map(i => i.length)))
+function accum(s) {
+  const arr = s.split("");
+  const newArr = arr.map((i, index) => {
+     const string = i.repeat(index+1)
+     return string.charAt(0).toUpperCase() + string.substring(1)
+  });
+  return newArr
 }
 
-console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
+console.log(accum("abcd"));
