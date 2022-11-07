@@ -1,9 +1,5 @@
-function isSquare(arr){
-     return (!arr.length)? undefined : arr.every(i => Number.isInteger(Math.sqrt(i)))
+function findShort(s){
+     return s.split(" ").map(i => i.length)
 }
 
-console.log(isSquare([1,4,9,16,25,36]))
-console.log(isSquare([1,2,3,4,5,6]))
-console.log(isSquare([]))
-
-// console.log(Math.sqrt(26))
+console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
