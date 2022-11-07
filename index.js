@@ -1,8 +1,10 @@
-function accum(s) {
-  return s.split("").map((i, index) => {
-     const string = i.toLowerCase().repeat(index+1)
-     return i.repeat(index+1).charAt(0).toUpperCase() + string.substring(1)
-  }).join("-");
+function isSquare(n){
+     return Math.sqrt(n)
 }
 
-console.log(accum("abcd"));
+console.log(isSquare(-1))
+console.log(isSquare(0))
+console.log(isSquare(3))
+console.log(isSquare(4))
+console.log(isSquare(25))
+console.log(isSquare(26))
