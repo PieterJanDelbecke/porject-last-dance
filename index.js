@@ -1,16 +1,8 @@
-function maskify(cc){
-     const arr = cc.split("")
-     const length = arr.length
-     const newArr = arr.map((i, index) =>{
-          if(index >length -5){
-               return i
-          } else {
-               return '#'
-          }
-     })
-     return newArr.join("")
+function maskify(cc) {
+  arr = cc.split("");
+  return arr.map((i, index) => (index > arr.length - 5 ? i : "#")).join("");
 }
 
-console.log(maskify('4556364607935616'))
-console.log(maskify('1'))
-console.log(maskify('11111'))
+console.log(maskify("4556364607935616"));
+console.log(maskify("1"));
+console.log(maskify("11111"));
