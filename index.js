@@ -1,18 +1,9 @@
-function fizzbuzz(n) {
-  const arr = [];
-  for (let i = 1 ; i <= n; i++) {
-    let a = "",
-      b = "";
-    if (i % 3 === 0) {
-      a = "Fizz";
-    }
-    if (i % 5 === 0) {
-      b = "Buzz";
-    }
-    const result = a + b ? a + b : i;
-    arr.push(result);
-  }
-  return arr;
+function largest(n, xs) {
+  return xs
+    .sort((a, b) => b - a)
+    .slice(0, n)
+    .sort((a, b) => a - b);
 }
 
-console.log(fizzbuzz(20));
+console.log(largest(2, [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]));
+console.log(largest(3, [5, 1, 5, 2, 3, 1, 2, 3, 5]));
