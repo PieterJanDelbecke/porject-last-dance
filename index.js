@@ -6,3 +6,8 @@ let month = date.getMonth() + 1;
 let year = date.getFullYear();
 
 console.log(`today is ${day}/${month}/${year}`);
+
+let currentDate = new Date().toJSON().slice(0, 10);
+console.log(currentDate);
+
+console.log(typeof currentDate);
