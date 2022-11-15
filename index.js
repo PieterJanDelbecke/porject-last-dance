@@ -11,3 +11,6 @@ let currentDate = new Date().toJSON().slice(0, 10);
 console.log(currentDate);
 
 console.log(typeof currentDate);
+
+let myDate = new Date().toLocaleDateString("au-AU");
+console.log(myDate);
