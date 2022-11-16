@@ -14,3 +14,4 @@ console.log(typeof currentDate);
 
 let myDate = new Date().toLocaleDateString("au-AU");
 console.log(myDate);
+console.log(myDate);
