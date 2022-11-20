@@ -1,28 +1,18 @@
-// const date = new Date();
-// console.log(date);
+function isLeapYear(year) {
+  if (year % 400 === 0) {
+    return true;
+  } else if (year % 100 === 0) {
+    return false;
+  } else if (year % 4 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
-// let day = date.getDate();
-// let month = date.getMonth() + 1;
-// let year = date.getFullYear();
-
-// console.log(`today is ${day}/${month}/${year}`);
-
-// let currentDate = new Date().toJSON().slice(0, 10);
-// console.log(currentDate);
-
-// console.log(typeof currentDate);
-
-// let myDate = new Date().toLocaleDateString("au-AU");
-// console.log(myDate);
-// console.log(myDate);
-
-const myObj = {
-  name: "Pieter-Jan",
-  city: "Sydney",
-};
-
-const myKeys = Object.keys(myObj);
-const myValues = Object.values(myObj);
-
-console.log("Keys:", myKeys);
-console.log("Objects:", myValues);
+console.log(isLeapYear(1234));
+console.log(isLeapYear(1984));
+console.log(isLeapYear(2000));
+console.log(isLeapYear(2010));
+console.log(isLeapYear(2013));
+console.log(isLeapYear(1900));
