@@ -1,25 +1,26 @@
 body {
-    margin: 0;
+  margin: 0;
+  background-color: yellow;
 }
 .container {
-    background-color: yellow;
-    height: 100vh;
-    display: flex;
+  border: 1px solid red;
 }
 
 .box {
-    margin: 5px;
+  height: 200px;
+  width: 200px;
+  margin: 5px;
 }
 
-.box1{
-    flex-grow: 1;
-    background-color: blue;
+.box1 {
+  /* flex-grow: 1; */
+  background-color: blue;
 }
 
-.box2{
-    background-color: red;
+.box2 {
+  background-color: red;
 }
 
-.box3{
-    background-color: green;
+.box3 {
+  background-color: green;
 }
