@@ -28,3 +28,18 @@ body {
 .unordered-list {
   background-color: orange;
 }
+.item-one {
+  color: green;
+}
+.item-two {
+  color: red;
+}
+.item-three {
+  color: pink;
+}
+.item-four {
+  color: white;
+}
+.item-five {
+  color: blue;
+}
