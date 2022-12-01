@@ -1,9 +1,12 @@
 function digitalRoot(n) {
-  return n
-    .toString()
-    .split("")
-    .map((num) => Number(num))
-    .reduce((a, b) => a + b);
+  do {
+    n = n
+      .toString()
+      .split("")
+      .map((i) => Number(i))
+      .reduce((a, b) => a + b);
+  } while (n > 9);
+  return n;
 }
 
 console.log(digitalRoot(16));
