@@ -12,3 +12,4 @@ function digitalRoot(n) {
 console.log(digitalRoot(16));
 console.log(digitalRoot(456));
 console.log(digitalRoot(100000000));
+console.log(digitalRoot(300000000));
