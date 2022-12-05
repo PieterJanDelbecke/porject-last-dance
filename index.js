@@ -1,15 +1,9 @@
-function digitalRoot(n) {
-  do {
-    n = n
-      .toString()
-      .split("")
-      .map((i) => Number(i))
-      .reduce((a, b) => a + b);
-  } while (n > 9);
-  return n;
-}
+let object = {
+  firstName: "Pieter-Jan",
+  lastName: "Delbecke",
+  email: "pjdelbecke@gmail.com",
+  phone: "0405 849 602",
+};
 
-console.log(digitalRoot(16));
-console.log(digitalRoot(456));
-console.log(digitalRoot(100000000));
-console.log(digitalRoot(300000000));
+object = { ...object, city: "Sydney" };
+console.log(object);
