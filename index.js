@@ -1,9 +1,7 @@
-let object = {
-  firstName: "Pieter-Jan",
-  lastName: "Delbecke",
-  email: "pjdelbecke@gmail.com",
-  phone: "0405 849 602",
-};
+const myMap = new Map();
 
-object = { ...object, city: "Sydney" };
-console.log(object);
+myMap.set("a", { firstName: "Pieter" });
+myMap.set("b", { lastName: "Delbecke" });
+myMap.set("c", { phone: "0405 849 602" });
+
+console.log(myMap.get("a"));
