@@ -1,3 +1,3 @@
-const arr = Array(4).fill(true);
-
-console.log(arr);
+function findNextSquare(sq) {
+  console.log("find next square");
+}
