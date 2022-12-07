@@ -1,7 +1,8 @@
-function findNextSquare(sq) {
-  console.log("find next square");
-}
+const fieldsArray = [
+  { id: 001, name: "Status" },
+  { id: 002, name: "numbers" },
+];
 
-console.log("prfact square one");
-console.log("prfact square two");
-console.log("prfact square thre");
+fieldsArray.map((field, index) => {
+  console.log("FieldName:", field.name, "Index:", index);
+});
