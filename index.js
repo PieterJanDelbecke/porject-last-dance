@@ -1,8 +1,7 @@
-const fieldsArray = [
-  { id: 001, name: "Status" },
-  { id: 002, name: "numbers" },
-];
+function hasSurvive(attackers, defenders) {
+  const initPowerAttacker = attackers.reduce((a, b) => a + b);
+  const initPowerDefenders = defenders.reduce((a, b) => a + b);
+  return [initPowerAttacker, initPowerDefenders];
+}
 
-fieldsArray.map((field, index) => {
-  console.log("FieldName:", field.name, "Index:", index);
-});
+console.log(hasSurvive([2, 9, 9, 7], [1, 1, 3, 8]));
