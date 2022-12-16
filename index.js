@@ -1,5 +1,6 @@
 const myMap = new Map();
 
-myMap.set(001, { name: "Pieter-Jan" });
+myMap.set(1, { name: "Pieter-Jan" });
 
 console.log(myMap);
+console.log(myMap.get(1));
