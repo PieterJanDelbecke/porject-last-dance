@@ -15,3 +15,4 @@ mySet.add(1);
 mySet.add(1);
 
 console.log(mySet);
+console.log([...mySet]);
