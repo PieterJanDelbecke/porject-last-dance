@@ -16,3 +16,4 @@ mySet.add(1);
 
 console.log(mySet);
 console.log([...mySet]);
+console.log("test test test");
