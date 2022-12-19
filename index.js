@@ -1,12 +1,10 @@
-function descendingOrder(n) {
-  let number = +n
+function squareDigits(num) {
+  return +num
     .toString()
     .split("")
-    .map((i) => Number(i))
-    .sort((a, b) => b - a)
+    .map((i) => Math.pow(+i, 2))
     .join("");
-  return number;
 }
 
-console.log(descendingOrder(1021));
-console.log(descendingOrder(123456789));
+console.log(squareDigits(3212));
+console.log(squareDigits(2112));
