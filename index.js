@@ -1,20 +1,10 @@
-const myMap = new Map();
+function descendingOrder(n) {
+  let number = n
+    .toString()
+    .split("")
+    .map((i) => Number(i));
+  console.log(number);
+}
 
-myMap.set(1, { name: "Pieter-Jan" });
-
-// console.log(myMap);
-// console.log(myMap.get(1));
-
-const mySet = new Set();
-
-mySet.add(1);
-mySet.add(1);
-mySet.add(1);
-mySet.add(2);
-mySet.add(1);
-mySet.add(1);
-
-console.log(mySet);
-console.log([...mySet]);
-console.log("test test test");
-console.log(" more test test test");
+console.log(descendingOrder(1021));
+console.log(descendingOrder(123456789));
