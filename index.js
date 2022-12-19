@@ -1,9 +1,11 @@
 function descendingOrder(n) {
-  let number = n
+  let number = +n
     .toString()
     .split("")
-    .map((i) => Number(i));
-  console.log(number);
+    .map((i) => Number(i))
+    .sort((a, b) => b - a)
+    .join("");
+  return number;
 }
 
 console.log(descendingOrder(1021));
