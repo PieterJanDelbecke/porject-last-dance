@@ -1,10 +1,6 @@
-function squareDigits(num) {
-  return +num
-    .toString()
-    .split("")
-    .map((i) => Math.pow(+i, 2))
-    .join("");
+function disemvowel(str) {
+  const regex = /[aouie]/gi;
+  return str.replace(regex, "");
 }
 
-console.log(squareDigits(3212));
-console.log(squareDigits(2112));
+console.log(disemvowel("This website is for losers LOL!"));
