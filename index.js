@@ -1,10 +1,9 @@
 function descendingOrder(n) {
-  const number = +n
+  return +n
     .toString()
     .split("")
     .sort((a, b) => b - a)
     .join("");
-  return number;
 }
 
 console.log(descendingOrder(0));
