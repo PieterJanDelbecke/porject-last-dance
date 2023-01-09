@@ -1,1 +1,24 @@
+.container {
+  width: 600px;
+  height: 100vh;
+  border: 1px solid red;
+}
 
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 5px;
+}
+
+.one {
+  background-color: yellow;
+}
+
+.two {
+  background-color: blue;
+}
+
+.three {
+  background-color: green;
+}
