@@ -1,8 +1,15 @@
-function minMinMax(array) {
-  const min = Math.min(...array);
-  const max = Math.max(...array);
-  return [min, max];
+function descendingOrder(n) {
+  const number = +n
+    .toString()
+    .split("")
+    .sort((a, b) => b - a)
+    .join("");
+  return number;
 }
 
-console.log(minMinMax([-1, 4, 5, -23, 24]));
-console.log(minMinMax([1, 3, -3, -2, 8, -1]));
+console.log(descendingOrder(0));
+console.log(descendingOrder(1));
+console.log(descendingOrder(111));
+console.log(descendingOrder(15));
+console.log(descendingOrder(1021));
+console.log(descendingOrder(123456789));
