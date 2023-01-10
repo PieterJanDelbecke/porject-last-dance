@@ -1,24 +1,64 @@
-.container {
-  width: 600px;
-  height: 100vh;
-  border: 1px solid red;
+.mona-lisa {
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.box {
-  width: 100px;
-  height: 100px;
-  border: 1px solid red;
-  margin: 5px;
+.face {
+  width: 300px;
+  height: 400px;
+  background-color: #ffe0bd;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
 }
 
-.one {
-  background-color: yellow;
+.hair {
+  width: 300px;
+  height: 150px;
+  background-color: #8b4513;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: -75px;
+  left: 0;
 }
 
-.two {
-  background-color: blue;
+.ear {
+  width: 50px;
+  height: 80px;
+  background-color: #ffe0bd;
+  border-radius: 50%;
+  position: absolute;
+  top: 120px;
 }
 
-.three {
-  background-color: green;
+.ear:first-child {
+  left: -30px;
+}
+
+.ear:last-child {
+  right: -30px;
+}
+
+.nose {
+  width: 40px;
+  height: 40px;
+  background-color: #8b4513;
+  border-radius: 50%;
+  position: absolute;
+  top: 180px;
+  left: 130px;
+}
+
+.mouth {
+  width: 60px;
+  height: 20px;
+  background-color: #8b4513;
+  border-radius: 50%;
+  position: absolute;
+  top: 240px;
+  left: 120px;
 }
