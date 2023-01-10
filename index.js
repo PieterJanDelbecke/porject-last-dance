@@ -1,12 +1,16 @@
-const myObject = {
+const myOldAddress = {
   name: "Pieter",
-  hobbies: ["running", "yoga"],
+  address: {
+    street: "Wyadra Ave",
+    number: 10,
+  },
 };
 
-// const myObjectCopy = { ...myObject };
+const myNewAddress = {
+  ...myOldAddress,
+};
 
-const myObjectCopy = structuredClone(myObject);
-myObject.hobbies.push("sailing");
+myNewAddress.address.street = "Westminster Ave";
+myNewAddress.address.unit = 11;
 
-console.log(myObject);
-console.log(myObjectCopy);
+console.log(myNewAddress);
