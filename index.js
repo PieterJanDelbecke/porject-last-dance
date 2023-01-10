@@ -1,14 +1,12 @@
-function descendingOrder(n) {
-  return +n
-    .toString()
-    .split("")
-    .sort((a, b) => b - a)
-    .join("");
-}
+const myObject = {
+  name: "Pieter",
+  hobbies: ["running", "yoga"],
+};
 
-console.log(descendingOrder(0));
-console.log(descendingOrder(1));
-console.log(descendingOrder(111));
-console.log(descendingOrder(15));
-console.log(descendingOrder(1021));
-console.log(descendingOrder(123456789));
+// const myObjectCopy = { ...myObject };
+
+const myObjectCopy = structuredClone(myObject);
+myObject.hobbies.push("sailing");
+
+console.log(myObject);
+console.log(myObjectCopy);
