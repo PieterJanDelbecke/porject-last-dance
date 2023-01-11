@@ -1,16 +1,6 @@
-const myOldAddress = {
-  name: "Pieter",
-  address: {
-    street: "Wyadra Ave",
-    number: 10,
-  },
-};
+function list_filter(l) {
+  return l.filter((a) => typeof a === "number");
+}
 
-const myNewAddress = {
-  ...myOldAddress,
-};
-
-myNewAddress.address.street = "Westminster Ave";
-myNewAddress.address.unit = 11;
-
-console.log(myNewAddress);
+console.log(list_filter([1, 2, "a", "b"]));
+console.log(list_filter([1, "a", "b", 0, 15]));
