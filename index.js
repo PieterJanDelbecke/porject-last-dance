@@ -1,22 +1,9 @@
-function addingShifted(arrayOfArrays, shift) {
-  const arr1 = arrayOfArrays[0];
-  const arr2 = arrayOfArrays[1];
-  const sumArr = arr1.map((number, index) => {
-    if (index < shift) {
-      return number;
-    } else {
-      return number + arr2[index];
-    }
-  });
-  return sumArr;
+function squareDigits(num) {
+  return +num
+    .toString()
+    .split("")
+    .map((item) => Math.pow(Number(item), 2))
+    .join("");
 }
 
-console.log(
-  addingShifted(
-    [
-      [1, 2, 3, 4, 5, 6],
-      [7, 7, 7, 7, 7, 7],
-    ],
-    3
-  )
-);
+console.log(squareDigits(3212));
