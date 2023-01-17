@@ -1,10 +1,8 @@
 function getMiddle(s) {
   const length = s.length;
-  if (length % 2 === 0) {
-    return s.slice(length / 2 - 1, length / 2 + 1);
-  } else {
-    return s.charAt(Math.floor(length / 2));
-  }
+  return length % 2 === 0
+    ? s.slice(length / 2 - 1, length / 2 + 1)
+    : s.charAt(Math.floor(length / 2));
 }
 
 console.log(getMiddle("test"));
