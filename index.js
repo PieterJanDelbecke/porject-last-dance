@@ -1,13 +1,19 @@
-function getMiddle(s) {
-  const length = s.length;
-  return length % 2 === 0
-    ? s.slice(length / 2 - 1, length / 2 + 1)
-    : s.charAt(Math.floor(length / 2));
+const c1 = {
+  x: 5,
+  y: 10,
+};
+
+const c2 = {
+  x: 75,
+  y: 235,
+};
+
+function printCoordinate() {
+  console.log(`${this.x}, ${this.y}`);
 }
 
-console.log(getMiddle("test"));
-console.log(getMiddle("testing"));
-console.log(getMiddle("middle"));
-console.log(getMiddle("A"));
+let c1_func = printCoordinate.bind(c1);
+let c2_func = printCoordinate.bind(c2);
 
-// console.log(Math.floor(5 / 3));
+c1_func();
+c2_func();
