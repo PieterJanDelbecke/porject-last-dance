@@ -14,13 +14,20 @@ const dataFieldOptions = [
   { fieldId: "AAA", name: "new", sortOrder: 0, default: true },
 ];
 
+// console.log(
+//   "dataFieldOption sorted",
+//   dataFieldOptions.sort((a, b) => a.sortOrder - b.sortOrder)
+// );
+
 const fieldOptions = {};
 
-console.log(
-  "dataFieldOption sorted",
-  dataFieldOptions.sort((a, b) => a.sortOrder - b.sortOrder)
-);
+for (const option of dataFieldOptions.sort(
+  (a, b) => a.sortOrder - b.sortOrder
+)) {
+  if (!fieldOptions[option.fieldId]) {
+    fieldOptions[option.fieldId] = [];
+  }
+  fieldOptions[option.fieldId].push(option);
+}
 
-// for (const option of dataFieldOptions.sort((a,b) => a.sortOrder - b.sortOrder)){
-//    if(!fieldOptions[opton])
-// }
+console.log("fieldOptions", fieldOptions);
