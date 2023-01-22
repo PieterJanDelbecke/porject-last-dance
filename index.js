@@ -1,19 +1,26 @@
-const c1 = {
-  x: 5,
-  y: 10,
-};
+const dataFieldOptions = [
+  { fieldId: "CCC", name: "D", sortOrder: 3, default: true },
+  { fieldId: "AAA", name: "yesterday", sortOrder: 2, default: false },
+  { fieldId: "BBB", name: "four", sortOrder: 3, default: true },
+  { fieldId: "AAA", name: "old", sortOrder: 1, default: false },
+  { fieldId: "CCC", name: "A", sortOrder: 0, default: true },
+  { fieldId: "BBB", name: "three", sortOrder: 2, default: false },
+  { fieldId: "CCC", name: "B", sortOrder: 1, default: false },
+  { fieldId: "CCC", name: "C", sortOrder: 2, default: false },
+  { fieldId: "AAA", name: "tomorrow", sortOrder: 3, default: true },
+  { fieldId: "BBB", name: "two", sortOrder: 1, default: false },
+  { fieldId: "BBB", name: "one", sortOrder: 0, default: true },
+  { fieldId: "CCC", name: "E", sortOrder: 4, default: true },
+  { fieldId: "AAA", name: "new", sortOrder: 0, default: true },
+];
 
-const c2 = {
-  x: 75,
-  y: 235,
-};
+const fieldOptions = {};
 
-function printCoordinate() {
-  console.log(`${this.x}, ${this.y}`);
-}
+console.log(
+  "dataFieldOption sorted",
+  dataFieldOptions.sort((a, b) => a.sortOrder - b.sortOrder)
+);
 
-let c1_func = printCoordinate.bind(c1);
-let c2_func = printCoordinate.bind(c2);
-
-c1_func();
-c2_func();
+// for (const option of dataFieldOptions.sort((a,b) => a.sortOrder - b.sortOrder)){
+//    if(!fieldOptions[opton])
+// }
