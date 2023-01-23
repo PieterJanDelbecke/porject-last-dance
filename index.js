@@ -32,10 +32,44 @@
 
 // console.log("fieldOptions", fieldOptions);
 
-const fieldOptions = {};
+// const fieldOptions = {};
 
-fieldOptions["Hello"] = [];
-fieldOptions["World"] = [];
-fieldOptions["Hello"].push({ x: 5, y: 10 });
+// fieldOptions["Hello"] = [];
+// fieldOptions["World"] = [];
+// fieldOptions["Hello"].push({ x: 5, y: 10 });
 
-console.log(fieldOptions);
+// console.log(fieldOptions);
+
+const options = {
+  AAA: {
+    id: "123",
+    value: "red",
+  },
+  BBB: {
+    id: "456",
+    value: "green",
+  },
+  CCC: {
+    id: "789",
+    value: "blue",
+  },
+};
+
+const customers = [
+  { name: "Pieter", id: "AAA" },
+  { name: "Ale", id: "BBB" },
+  { name: "Tony", id: "CCC" },
+];
+
+// fieldOptions["Hello"].push({ x: 5, y: 10 });
+
+const results = [];
+for (const customer of customers) {
+  const data = options[customer.id];
+  if (!results[customer.name]) {
+    results[customer.name] = [];
+  }
+  results[customer.name].push(data);
+}
+
+console.log(results);
