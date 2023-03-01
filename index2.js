@@ -1,11 +1,8 @@
-const entries = {
-  age: 40,
-  address: {
-    city: "Syndey",
-    street: "WESTMINSTER",
-  },
-};
+const myString = "10 (of 03)";
+const index = myString.indexOf(" ");
 
-entries["address"]["street"] = "WYANDRA";
+beginString = myString.slice(0, index);
+endString = myString.slice(index);
 
-console.log(entries["address"]["street"]);
+console.log(beginString);
+console.log(endString);
