@@ -1,8 +1,5 @@
-const myString = "10 (of 03)";
-const index = myString.indexOf(" ");
+const arr = [1, 2, 3];
 
-beginString = myString.slice(0, index);
-endString = myString.slice(index);
-
-console.log(beginString);
-console.log(endString);
+let total = 0;
+arr.forEach((e) => (total = total + e));
+console.log(total);
