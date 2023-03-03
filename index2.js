@@ -8,3 +8,5 @@ let arr2 = arr.map((e) => e + 2);
 
 console.log(arr1);
 console.log(arr2);
+
+console.log("hello world");
